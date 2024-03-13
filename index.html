@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mie Anne Sugiyama Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <div class="container-fluid header-outer">
+        <!--ナビゲーションバー-->
+        <div class='fixed-top'>
+            <span>
+                <nav class="navbar navbar-expand-md sticky-top">
+                    <div class="logo">
+                        <h4>Miean Sugiyama</h4>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#profile">AboutMe</a></li>
+                        <li><a href="#skills">Skill</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </span>
+        </div>
+        <header class="text-light py-3">
+            <h1 class="display-1">Miean Sugiyama Portfolio</h1>
+            <p class="lead">夢を描いて夢を叶える</p>
+        </header>
+    </div>
+    <!-- プロフィール -->
+    <div class="container">
+        <section id="profile">
+            <h2 class="display-3">AboutMe</h2>
+            <p>当ポートフォリオへ訪問いただきありがとうございます。杉山美栄アンと申します。<br>
+                エンジニアを目指し2023年11月からプログラミングの勉強スタートしました。<br>
+                主にJavaを使用したWebシステムの開発に取り組んでいます。<br>
+                こちらは練習も兼ねた趣味で制作したポートフォリオサイトです。</p>
+            <div class="profile">
+                <div>
+                    <h2 class="display-3">Profile</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/face.jpg" alt="プロフィール写真" class="small-image">
+                    </div>
+                    <div class="col-sm-8">
+                        <p>■生年月日■
+                            1991年8月20日<br>
+                            ■出身■
+                            東京都墨田区<br>
+                            ■経歴■
+                            アメリカへダンス留学を経て帰国後9年間ダンサーとして活動。<br>
+                            &emsp;&emsp;&emsp;&emsp;その後物流・貿易関連会社にてOL業に従事。<br>
+                            ■趣味■
+                            コーディング、筋トレ、麻雀、SNSサーフィン、カフェ巡り、ピアノ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- スキル -->
+        <section id="skills">
+            <h2 class="display-3">Skill</h2><br>
+            <div class="img"> <img src="images/Java.jpg" alt="" class="small-image">
+                <img src="images/spring.jpg" alt="" class="small-image">
+                <img src="images/servlet.jpg" alt="" class="small-image">
+                <img src="images/mysql.jpg" alt="" class="small-image"><br>
+                <img src="images/hcj.jpg" alt="" class="small-image1">
+                <img src="images/jquery.jpg" alt="" class="small-image">
+                <img src="images/bootstrap.jpg" alt="" class="small-image">
+            </div>
+        </section>
+        <!-- 作品集 -->
+        <section id="works">
+            <h2 class="display-3">Works</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="images/heart.jpg" alt="" class="img-fluid">
+                        <div class="card-body d-flex justify-content-between">
+                            <h4 class="card-title">会員管理システム(公開中)</h4>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal01">
+                                詳しく見る </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="images/heart.jpg" alt="" class="img-fluid">
+                        <div class="card-body d-flex justify-content-between">
+                            <h4 class="card-title">英語学習アプリ</h4>
+                            <p>(ローカルのみ)
+                            </p>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal03">
+                                詳しく見る </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="images/heart.jpg" alt="" class="img-fluid">
+                        <div class="card-body d-flex justify-content-between">
+                            <h4 class="card-title">AIチャットボット</h4>
+                            <p>(ローカルのみ)</p>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal04">
+                                詳しく見る </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- モーダル01 -->
+            <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modal01-label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal01-label">会員管理システム</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                                    aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">
+                                <img alt="作品1" src="images/Memberlist.jpg" class="img-fluid">
+                            </p>
+                            <p>【説明】<br>
+                                CRUD機能を使用した会員管理システムです<br></p>
+                            <p>【URL】<br>
+                                <a href="http://java.apps.rok.jp:22561/" target="_blank">http://java.apps.rok.jp:22561/</a><br></p>
+                                <p>【使用言語】<br> Java</p> 
+                            <p>【備考】<br>
+                            ログイン:taro パスワード:pass</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- モーダル02 -->
+            <div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="modal01-label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal03-label">英語学習アプリ</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                                    aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">
+                                <img alt="作品3" src="images/chatbot.jpg" class="img-fluid">
+                            </p>
+                            <p>【説明】<br>
+                                AIを使用した英語のライティングの練習アプリです                               
+                            <p>【URL】<br>
+                                coming soon<br>
+                                【使用言語】<br>
+                                html / css / javascript</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- モーダル03 -->
+            <div class="modal fade" id="modal04" tabindex="-1" role="dialog" aria-labelledby="modal01-label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal04-label">AIチャットボット</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                                    aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">
+                                <img alt="作品4" src="images/AIchatbot.jpg" class="img-fluid">
+                             </p>
+                             <p>【説明】<br>
+                                ChatGPTをチャット形式で使用できるアプリです<br>
+                            <p>【URL】<br>
+                                coming soon<br>
+                                【使用言語】<br>
+                                html / css / javascrippt
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 問い合わせフォーム -->
+        <div class="py-4">
+            <div class="container">
+                <section id="contact" md-4>
+                    <h2 class="display-3">Contact</h2>
+                    <div class="form03 mb-5">
+                        <form>
+                            <div class="form-inner">
+                                <div class="form-label">
+                                    <label for="form03-name">お名前</label>
+                                    <span class="required">必須</span>
+                                </div>
+                                <div class="form-input">
+                                    <input type="text" id="form03-name" name="name" autocomplete="name" required />
+                                </div>
+                            </div>
+                            <div class="form-inner">
+                                <div class="form-label">
+                                    <label for="form03-email">メールアドレス</label>
+                                    <span class="required">必須</span>
+                                </div>
+                                <div class="form-input">
+                                    <input type="email" id="form03-email" name="email" autocomplete="email" required />
+                                </div>
+                            </div>
+                            <div class="form-inner">
+                                <div class="form-label">
+                                    <label for="form04-details">お問い合わせ内容</label>
+                                </div>
+                                <div class="form-input">
+                                    <textarea id="form04-details" name="details"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="form-btn">送信する</button>
+                        </form>
+                    </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    </main>
+
+    <div class="container-fluid  text-light text-center pt-4 pb-2">
+        <footer>
+            <p><small>© portfolio.</small></p>
+        </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
