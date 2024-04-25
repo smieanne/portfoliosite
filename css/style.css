@@ -1,314 +1,317 @@
-
 /*ヘッダー*/
-.header-outer { 
-    text-align: center;
-     height: 780px; 
-     background-image: url(../images/top.jpg); 
-     background-size: cover; 
-     background-position: 50% 50%; 
-     text-shadow: 1px 1px 2px #ffffff; 
-    }
-    h1{
-        margin-top: 18%;
-    }
-    
-
-nav{
-    margin-bottom: 0%;
-    font-size: 22px;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* 黒の半透明（透明度0.5） */
+.header-outer {
+  text-align: center;
+  height: 780px;
+  background-image: url(../images/top.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  text-shadow: 1px 1px 2px #ffffff;
 }
-.logo{
-    padding-left: 10%;
-    color:#fafafa;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 45%;
-    margin-left: 30%;
-   
+h1 {
+  margin-top: 18%;
 }
 
-.nav-links li{
-    list-style: none;
+nav {
+  margin-bottom: 0%;
+  font-size: 22px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* 黒の半透明（透明度0.5） */
 }
-.nav-links a{
-    text-decoration: none;
-    color:#ffffff;
-    
+.logo {
+  padding-left: 10%;
+  color: #fafafa;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.burger{
-    display: none;
-    cursor: pointer;
-}
-
-.burger div{
-    width:25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: all 0.5s ease-in-out; /*ハンバーガーメニューの線がバッテンに変わる*/
-}
-
-.nav-active{
-    transform:translateX(0%) !important;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  margin-left: 30%;
 }
 
-.container{
-    margin-top: -60px;
-    padding-top: 60px;
-    text-align: center;
-  }
- 
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.5s ease-in-out; /*ハンバーガーメニューの線がバッテンに変わる*/
+}
+
+.nav-active {
+  transform: translateX(0%) !important;
+}
+
+.container {
+  margin-top: -60px;
+  padding-top: 60px;
+  text-align: center;
+}
 
 /*画面の幅が1024pxより小さくなった時に文字の幅も調整される*/
- @media screen and (max-width: 1024px){
- .nav-links {
-    width:55%;
- }
-h1{
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 55%;
+  }
+  h1 {
     padding-top: 10%;
     text-align: left;
-    width:50%;
-}
-.lead{
+    width: 50%;
+  }
+  .lead {
     text-align: left;
+  }
 }
-
-
- }
 /*画面の幅が768px(スマホのサイズ)より小さくなった時にハンバーガーメニューが出てくる*/
 
-@media screen and (max-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
-    .container{
-       text-align: center;
-        font-size: 10px;
-        
-        p{
-          margin-left: 8%;
-          margin-right: 8%;
-          margin-top: 3%;
-          text-align: left;
-        }
-        .col-sm-4{
-          text-align: center;
-        }
-    
-        .small-image{
-          width: 80px; 
-          height: 80px; 
-        }
-        .small-image1{
-          width: 80px; 
-          height: 80px; 
-        }
-        
-        
-    }
-    
-    
-   
-    
-    .nav-links {
-       position: absolute; 
-       right:0;
-       height:92vh; /*サイドバーの高さ*/
-       top: 8vh; /*ナビゲーションバーの高さ*/
-       background-color: rgba(0, 0, 0, 0.9); 
-       flex-direction: column;
-       align-items: center;
-       width: 50%;
-       transform: translateX(100%); /*レスポンシブに対応すると画面外にサイドバーが行く*/
-    }
-    .nav-links li {
-        opacity: 0; /*最初はサイドバー*/
-    }
-    .burger {
-        display: block; /*ハンバーガーメニューが出現*/
-    }
-   }
-   @keyframes navLinksFade {
-    0%{
-        opacity: 0;
-        transform:translateX(50px); /*文字が右からシュッシュと出現*/
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0); /*文字が右からシュッシュと出現*/
-    }
-   }
-   /*ハンバーガーの線がバッテンに変わる*/
-   .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-   }
-   .toggle .line2 {
-    opacity: 0;
-   }
-   .toggle .line3 {
-    transform: rotate(405deg) translate(-5px, -6px); /*405degにすることで×がくるくると回る動きが出る*/
-   }
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    text-align: center;
 
-
-
-   .small-image{
-    width: 200px; 
-    height: 200px; 
-  }
- 
- 
-  section {
-    margin-top: -60px;
-    padding-top: 60px;
-  
+    p {
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-top: 5%;
+      text-align: left;
     }
-    
-    
+    .col-sm-4 {
+      text-align: center;
+    }
 
-  .col-sm-4{
-    text-align: right;
+    .small-image {
+      width: 80px;
+      height: 80px;
+    }
+    .small-image1 {
+      max-width: 60px;
+      max-height: 60px;
+    }
+    .small-image2 {
+      max-width: 60px;
+      max-height: 60px;
+    }
+    .small-image3 {
+      max-width: 40px;
+      max-height: 40px;
+    }
   }
-  .col-sm-8{
-    text-align: left;
-    padding-left: -20%;
-  }
-
- 
-  
-  p{
-      font-size: 1.2em;
-      font-family:"meiryo";  
-  }
-  
- 
-  h2 {
-    margin: 30px 10px;
-  
-  }
-  
-  h2, h3 {
-    position: relative;
-    display: inline-block;
-  }
-   h2::after, h3::after {
-    content: "";
-    display: block;
-    width: 50%; /* 下線の幅を調整 */
-    height: 2px; /* 下線の太さを調整 */
-    background-color: #8B0000; /* 下線の色を指定 */
+  .nav-links {
     position: absolute;
-    bottom: 0;
-    left: 25%; /* 下線の位置を調整 */
-    transition: width 0.3s ease-in-out; /* アニメーションを追加 */
+    right: 0;
+    height: 92vh; /*サイドバーの高さ*/
+    top: 8vh; /*ナビゲーションバーの高さ*/
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(
+      100%
+    ); /*レスポンシブに対応すると画面外にサイドバーが行く*/
   }
- h2:hover::after, h3:hover::after, h4:hover::after, h5:hover::after, h6:hover::after {
-    width: 100%; /* ホバー時に下線を100%に拡大 */
+  .nav-links li {
+    opacity: 0; /*最初はサイドバー*/
   }
+  .burger {
+    display: block; /*ハンバーガーメニューが出現*/
+  }
+}
+@keyframes navLinksFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); /*文字が右からシュッシュと出現*/
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /*文字が右からシュッシュと出現*/
+  }
+}
+/*ハンバーガーの線がバッテンに変わる*/
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(405deg) translate(-5px, -6px); /*405degにすることで×がくるくると回る動きが出る*/
+}
 
+.small-image {
+  width: 200px;
+  height: 200px;
+}
 
-li{
-    list-style: none;
-    font-size: 20px;
+.small-image1 {
+  max-width: 150px;
+  max-height: 150px;
+}
+.small-image2 {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.small-image3 {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+section {
+  margin: -60px;
+  padding: 60px;
+}
+
+.col-sm-4 {
+  text-align: right;
+}
+.col-sm-6 {
+  text-align: left;
+  padding-left: -20%;
+}
+p {
+  font-size: 1.2em;
+  font-family: "meiryo";
+}
+
+h2 {
+  margin: 30px 10px;
+}
+
+h2,
+h3 {
+  position: relative;
+  display: inline-block;
+}
+h2::after,
+h3::after {
+  content: "";
+  display: block;
+  width: 50%; /* 下線の幅を調整 */
+  height: 2px; /* 下線の太さを調整 */
+  background-color: #8b0000; /* 下線の色を指定 */
+  position: absolute;
+  bottom: 0;
+  left: 25%; /* 下線の位置を調整 */
+  transition: width 0.3s ease-in-out; /* アニメーションを追加 */
+}
+h2:hover::after,
+h3:hover::after,
+h4:hover::after,
+h5:hover::after,
+h6:hover::after {
+  width: 100%; /* ホバー時に下線を100%に拡大 */
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
 }
 
 /* =============================================
 フォームのCSSはここから
 ============================================= */
 
-  
-  /* フォーム03 */
-  .form03 {
-    max-width: 650px;
-    margin: 0 auto;
-  }
-  
+/* フォーム03 */
+.form03 {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.form-inner {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #8b0000;
+  padding: 1.5rem 0.5rem;
+}
+
+.form-label {
+  font-weight: bold;
+  width: 30%;
+}
+
+.form-label label {
+  vertical-align: middle;
+}
+
+.form-input {
+  width: 70%;
+}
+
+.required {
+  display: inline-block;
+  background: #ea7474;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.2rem;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+
+.radio-inner {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 40px;
+  background: #f5f5f5;
+  padding: 1rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  background: #f5f5f5;
+  padding: 1rem;
+}
+
+.form-btn {
+  display: block;
+  width: 180px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 30px;
+  padding: 0.9rem 0;
+  margin: 1.5rem auto 0;
+}
+
+@media (max-width: 768px) {
   .form-inner {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #8B0000;
-    padding: 1.5rem 0.5rem;
-  }
-  
-  .form-label {
-    font-weight: bold;
-    width: 30%;
-  }
-  
-  .form-label label {
-    vertical-align: middle;
-  }
-  
-  .form-input {
-    width: 70%;
-  }
-  
-  .required {
-    display: inline-block;
-    background: #EA7474;
-    color: #fff;
-    font-size: 0.75rem;
-    padding: 0.2rem;
-    margin-left: 0.3rem;
-    vertical-align: middle;
-  }
-  
-  .radio-inner {
-    display: inline-block;
-    margin-right: 0.5rem;
-  }
-  
-  input[type="text"],
-  input[type="email"] {
-    width: 100%;
-    height: 40px;
-    background: #f5f5f5;
-    padding: 1rem;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 100px;
-    background: #f5f5f5;
-    padding: 1rem;
-  }
-  
-  .form-btn {
     display: block;
-    width: 180px;
-    background: white;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 30px;
-    padding: 0.9rem 0;
-    margin: 1.5rem auto 0;
   }
-  
-  @media (max-width: 768px) {
-    .form-inner {
-      display: block;
-    }
-  
-    .form-label {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-  
-    .form-input {
-      width: 100%;
-    }
+
+  .form-label {
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  
-  .container-fluid{
-    background-color: rgba(0, 0, 0, 0.5); /* 黒の半透明（透明度0.5） */
+
+  .form-input {
+    width: 100%;
   }
+}
+
+.container-fluid {
+  background-color: rgba(0, 0, 0, 0.5); /* 黒の半透明（透明度0.5） */
+}
